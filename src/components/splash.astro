@@ -4,20 +4,21 @@ import { Icon } from "astro-icon/components";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import radioImage from "~/assets/Hola2.png";
-
-const widths = [450, 800];
-const sizes = "(min-width: 640px) 42vw, 67vw";
+import leftLogo from "~/assets/ph.png";
+import rightLogo from "~/assets/pp.png";
+const widths = [450, 600];
+const sizes = "(min-width: 440px) 42vw, 67vw";
 ---
 
-<section class="relative h-full bg-black">
+<section class="relative h-full bg-black pb-8">
   <Starfield />
  
-  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
-    <HeroImage />
-  </div>
   <div class="relative flex flex-col items-center h-full justify-center gap-4">
+    <div class="flex justify-between items-center  w-3/4 max-w-4xl mx-auto pt-4">
+      <img src={leftLogo.src} alt="Left Logo" class="max-w-[100px] h-auto md:max-w-[75px] sm:max-w-[50px]" />
+      <img src={rightLogo.src} alt="Right Logo" class="max-w-[100px] h-auto md:max-w-[75px] sm:max-w-[50px]" />
+    </div>
     <h2 class="flex flex-col items-center gap-2 text-center">
-   
       <div class="gradient-text font-extrabold tracking-tighter text-6xl md:text-8xl">
         Radio Cypher
       </div>
@@ -32,7 +33,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
         alt="A floating astronaut in a space suit"
       />
     </div>
-    <div class=" gradient-text font-bold text-center text-4xl md:text-4xl">
+    <div class="gradient-text font-bold text-center text-2xl md:text-2xl">
       web3 y Blockchain
       <br />
       para el ámbito artístico y cultural de Medellín
@@ -55,7 +56,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     }
 
     100% {
-      transform: translate3d(0, 30px, 0);
+      transform: translate3d(0, 20px, 0);
     }
   }
 
