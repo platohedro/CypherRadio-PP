@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Podcast" id="intro">
+  <Fragment slot="lead">
+
+    El objetivo principal es fomentar la apropiación social de conocimientos sobre  <span class="text-primary">Web 3</span>,  <span class="text-primary">Blockchain</span> y tecnologías emergentes, mejorando la gestión de recursos y sostenibilidad de organizaciones culturales y artísticas en Medellín mediante procesos educomunicativos.
+
+   </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://docs.astro.build/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:telescope" class="size-8" />
+      <span>Platohero</span>
+    </a>
+    <a
+      href="https://astro.new/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:rocket" class="size-8" />
+      <span>Web3Wasi</span>
+    </a>
+  </div>
+</ContentSection>
