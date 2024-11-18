@@ -1,30 +1,5 @@
 ---
-import { Icon } from "astro-icon/components";
-import HeroImage from "~/components/hero-image.astro";
-import type { FooterLink } from "~/types";
 
-const links: Array<FooterLink> = [
-  {
-    url: "https://astro.build/",
-    description: "Astro's official website",
-    icon: "mdi:home",
-  },
-  {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
-    icon: "fa-brands:github-alt",
-  },
-  {
-    url: "https://astro.build/chat",
-    description: "Astro on Discord",
-    icon: "fa-brands:discord",
-  },
-  {
-    url: "https://twitter.com/astrodotbuild",
-    description: "Astro on Twitter",
-    icon: "fa-brands:twitter",
-  },
-];
 ---
 
 <footer class="relative flex h-64 items-center justify-center">
@@ -37,6 +12,6 @@ const links: Array<FooterLink> = [
       <br>con recursos del programa de planeación
       <br>y Desarrollo Local Presupuesto Participativo de Cultura
     </p>
-    <img src="/src/assets/logo_footer2.png" alt="Logo" class="h-24 w-auto"/>
+    <img src="https://raw.githubusercontent.com/platohedro/CypherRadio-PP/refs/heads/main/src/assets/logo_footer2.png" alt="Logo" class="h-24 w-auto"/>
   </div>
 </footer>

@@ -14,17 +14,17 @@ const orderedSites = featuredSites.sort(
 
 <ContentSection title="Episodios" id="showcase">
   <Fragment slot="lead">
-    Astro is <span class="text-primary">versatile</span>.{" "}
-    <span class="text-primary">Explore</span> what's possible and get{" "}
-    <span class="text-primary">inspired</span>.
+    Cada Episodio trata un<span class="text-primary"> tema</span>.{" "}
+  diferente que tarata las diversas caracteristicas del ecosistema{" "}
+    <span class="text-primary">Blockchain y web 3</span>.
   </Fragment>
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {orderedSites.map((site) => <ShowcaseCard site={site} />)}
     </div>
     <p class="text-right text-sm">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
+      <a class="text-primary" href="https://podcast.platohedro.org/pp" target="_blank">
+        ...Ver Todos los Episodios &rarr;
       </a>
     </p>
   </div>
