@@ -1,9 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import { Icon } from "astro-icon/components";
-import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
-import radioImage from "~/assets/Hola2.png";
+import radioImage from "~/assets/PP_Pieza2.png";
 import leftLogo from "~/assets/ph.png";
 import rightLogo from "~/assets/pp.png";
 const widths = [450, 600];
@@ -23,14 +21,14 @@ const sizes = "(min-width: 440px) 42vw, 67vw";
         Radio Cypher
       </div>
     </h2>
-    <div id="astronaut" class="w-2/3 max-w-3xl">
+    <div id="astronaut" class=" max-w-xl">
       <Image
-        class="h-full w-full object-cover"
+        class=" object-cover"
         src={radioImage}
         widths={widths}
         sizes={sizes}
         loading="eager"
-        alt="A floating astronaut in a space suit"
+        alt="Radio Cypher"
       />
     </div>
     <div class="gradient-text font-bold text-center text-2xl md:text-2xl">
