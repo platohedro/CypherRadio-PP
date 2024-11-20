@@ -45,14 +45,14 @@ const features: Array<FeatureItem> = [
           <p class="text-center font-extrabold text-xl">{title}</p>
           <p class="text-center text-offset text-sm">{description}</p>
           {videoUrl && (
-            <iframe
+            <video
               width="296"
               height="515"
               src={videoUrl}
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+             autoplay="false"
+              
+              controls
+            ></video>
           )}
         </li>
       ))
